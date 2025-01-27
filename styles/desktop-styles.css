@@ -52,9 +52,17 @@ body {
 
 @media screen and (max-width: 715px) {
   .page-layout {
-    grid-template-columns: repeat(4, 20%);
-    grid-template-rows: repeat(2, 45%);
-    grid-template-areas: "section1 section1 section2 section5" "section3 section4 section4 section5";
+    margin: 0;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(3, 45%);
+    grid-template-areas: "section1 section2 " "section3 section4 " "section5 section5";
+    height: 80%;
+    width: 80%;
+    gap: 60px;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
 
