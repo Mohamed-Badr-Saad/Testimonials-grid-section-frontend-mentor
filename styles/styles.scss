@@ -1,0 +1,90 @@
+@use "./variables" as variables;
+
+body {
+    font-size: 13px;
+    font-weight: map-get(variables.$font-weights, small);
+    background-color: map-get(variables.$palette, light-gray);
+    font-family: "Barlow Semi Condensed";
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-layout {
+    margin: 30px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 20px;
+
+    &.bg-moderate-violet {
+        background-color: map-get($map: variables.$palette, $key: moderate-violet);
+    }
+    &.bg-very-dark-grayish-blue {
+        background-color: map-get($map: variables.$palette, $key: very-dark-grayish-blue);
+    }
+    &.bg-very-dark-blackish-blue {
+        background-color: map-get($map: variables.$palette, $key: very-dark-blackish-blue);
+    }
+    &.bg-white {
+        background-color: map-get($map: variables.$palette, $key: white);
+    }
+    &.txt-light-grayish-blue {
+        color: map-get($map: variables.$palette, $key: light-grayish-blue);
+    }
+    &.txt-very-dark-grayish-blue {
+        color: map-get($map: variables.$palette, $key: very-dark-grayish-blue);
+    }
+
+    h2 {
+        font-weight: map-get($map: variables.$font-weights, $key: medium);
+    }
+    p {
+        opacity: 70%;
+        font-weight: map-get($map: variables.$font-weights, $key: small);
+        line-height: 150%;
+    }
+}
+
+.account-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+        border-radius: 100%;
+        &.border {
+            border: 3px solid lighten(map-get(variables.$palette, moderate-violet), 10%);
+        }
+        margin-right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .name {
+        font-weight: map-get($map: variables.$font-weights, $key: small);
+        margin: 0;
+    }
+    .status {
+        font-weight: map-get($map: variables.$font-weights, $key: small);
+        margin: 0;
+        opacity: 50%;
+    }
+}
+
+.pattern-quotation {
+    background-image: url("../images/bg-pattern-quotation.svg");
+    background-size: contain; /* Adjusts size */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-position: top 20px right 20px; /* Centers the image */
+    background-size: 30%;
+}

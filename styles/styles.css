@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-size: 13px;
+  font-weight: 500;
+  background-color: hsl(0, 0%, 81%);
+  font-family: "Barlow Semi Condensed";
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-layout {
+  margin: 30px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 20px;
+}
+.card.bg-moderate-violet {
+  background-color: hsl(263, 55%, 52%);
+}
+.card.bg-very-dark-grayish-blue {
+  background-color: hsl(217, 19%, 35%);
+}
+.card.bg-very-dark-blackish-blue {
+  background-color: hsl(219, 29%, 14%);
+}
+.card.bg-white {
+  background-color: hsl(0, 0%, 100%);
+}
+.card.txt-light-grayish-blue {
+  color: hsl(210, 46%, 95%);
+}
+.card.txt-very-dark-grayish-blue {
+  color: hsl(217, 19%, 35%);
+}
+.card h2 {
+  font-weight: 600;
+}
+.card p {
+  opacity: 70%;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.account-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.account-info img {
+  border-radius: 100%;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+}
+.account-info img.border {
+  border: 3px solid #9269d3;
+}
+.account-info .name {
+  font-weight: 500;
+  margin: 0;
+}
+.account-info .status {
+  font-weight: 500;
+  margin: 0;
+  opacity: 50%;
+}
+
+.pattern-quotation {
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-size: contain; /* Adjusts size */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-position: top 20px right 20px; /* Centers the image */
+  background-size: 30%;
+}
+
+/*# sourceMappingURL=styles.css.map */
