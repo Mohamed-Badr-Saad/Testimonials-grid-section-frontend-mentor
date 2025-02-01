@@ -3,7 +3,7 @@
 body {
     font-size: 13px;
     font-weight: map-get(variables.$font-weights, small);
-    background-color: map-get(variables.$palette, light-gray);
+    background-color: map-get(variables.$palette, light-grayish-blue);
     font-family: "Barlow Semi Condensed";
     width: 95vw;
     display: flex;
