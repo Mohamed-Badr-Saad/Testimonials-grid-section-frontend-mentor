@@ -22,7 +22,14 @@ body {
 
 .card {
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px 0 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.card > * {
+  width: 80%;
 }
 .card.bg-moderate-violet {
   background-color: hsl(263, 55%, 52%);
